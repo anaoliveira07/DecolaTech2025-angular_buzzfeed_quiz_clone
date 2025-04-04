@@ -1,0 +1,6 @@
+<div class="quiz-container">
+  <h2>{{ questions[currentQuestionIndex]?.question }}</h2>
+  <div *ngFor="let option of questions[currentQuestionIndex]?.options">
+    <button (click)="nextQuestion(option)">{{ option }}</button>
+  </div>
+</div>
